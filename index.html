@@ -9,17 +9,16 @@
 	<meta name="description" content="">
 	<link rel="stylesheet" type="text/css" href="style.css">	
 	<title>Denis Postolenko</title>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<!-- 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
 </head>
 
 <body>
 
 	<div class="wrapper">
-
+	<div class="menu_show_mask" id="menu_show"></div>
 	<!-- Header -->
 		
 	<header>
-
 		<div class="header_site">
 			<div class="header_row_wrapp">
 				<div class="row header_row_1">
@@ -55,11 +54,16 @@
 			<div class="row">
 				<div class="main_nav_sect">
 					<div class="col">
-						<button class="respmenubtn">
-							<span></span>
-							<span></span>
-							<span></span>
-						</button>
+						<div class="respmenubtn">
+							<div class="col">
+								<p>Меню</p>
+							</div>
+							<div class="col">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
 					</div>
 					<div class="col">
 						<div class="main_nav_wrapp" id="resp_nav">
@@ -70,9 +74,55 @@
 							</ul>
 						</div>
 					</div>
+
+					<div class="main_nav_dropdown offset_ziro" id="dropdown_menu">
+						<div class="col">
+							<ul>
+								<li><a href="#">Link  1</a></li>
+								<li><a href="#">Link  2</a></li>
+								<li><a href="#">Link  3</a></li>
+								<li><a href="#">Link  4</a></li>
+								<li><a href="#">Link  5</a></li>
+								<li><a href="#">Link  6</a></li>
+								<li><a href="#">Link  1</a></li>
+								<li><a href="#">Link  2</a></li>
+								<li><a href="#">Link  3</a></li>
+								<li><a href="#">Link  4</a></li>
+								<li><a href="#">Link  5</a></li>
+								<li><a href="#">Link  6</a></li>
+								<li><a href="#">Link  1</a></li>
+								<li><a href="#">Link  2</a></li>
+								<li><a href="#">Link  3</a></li>
+								<li><a href="#">Link  4</a></li>
+								<li><a href="#">Link  5</a></li>
+								<li><a href="#">Link  6</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<ul>
+								<li><a href="#">Link  1</a></li>
+								<li><a href="#">Link  2</a></li>
+								<li><a href="#">Link  3</a></li>
+								<li><a href="#">Link  4</a></li>
+								<li><a href="#">Link  5</a></li>
+								<li><a href="#">Link  6</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<ul>
+								<li><a href="#">Link  1</a></li>
+								<li><a href="#">Link  2</a></li>
+								<li><a href="#">Link  3</a></li>
+								<li><a href="#">Link  4</a></li>
+								<li><a href="#">Link  5</a></li>
+								<li><a href="#">Link  6</a></li>
+							</ul>
+						</div>
+					</div>
+
 				</div>
 			</div>
-		</div>								
+		</div>
 	</header>
 
 	<!-- /Header -->
@@ -83,11 +133,27 @@
 			<!-- Section 1 - Main Page -->
 
 			<section class="promo_sect">
-				<div class="row">
+				<div class="bg_line_wrapp">
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+				</div>
+				<div class="promo_img_sect">
+					<div class="row">
+						<div class="promo_img">
+							<img src="img/promo_img.jpg" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="row content_row">
+					<img class="tr_1" src="img/yellow_tr_2.svg" alt="" />
 					<div class="promo_desc">
-						<h1>Ремонт квартир<br /> в Москве</h1>
+						<h1>Ремонт квартир<br /> в Москве <img class="tr_2" src="img/yellow_tr_3.svg" alt="" /></h1>
 						<p>Цены не кусают!  Смета окончательная!</p>
 						<a href="#" class="yellow_pill">Рассчитать цену</a>
+						<img  class="tr_3" src="img/yellow_tr_4.svg" alt="" />
 					</div>
 				</div>
 			</section>
@@ -96,40 +162,54 @@
 
 			<!-- Section 2 - Main Page -->
 
-			<section>
+			<section class="overflow_wrapp">
+				<div class="bg_line_wrapp">
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+				</div>
 				<div class="row">
-					<div class="article_1">
-						<div class="title_wrapp_1">
-							<p><b>Мы всегда работаем на высшем уровне</b></br>
-							и гарантируем качество и долговечность ремонта</p>
+					<div class="article_1_wrapp">
+						<div class="col">
+							<div class="article_1">
+								<div class="title_wrapp_1">
+									<p><b>Мы всегда работаем на высшем уровне</b></br>
+									и гарантируем качество и долговечность ремонта</p>
+								</div>
+								<div class="thumbnails_1">
+									<div class="thumb_1">
+										<div class="img_box">
+											<img src="img/icon_01.svg" alt="" />
+										</div>
+										<p>11 лет честной<br /> работы</p>
+									</div>
+									<div class="thumb_1">
+										<div class="img_box">
+											<img src="img/icon_02.svg" alt="" />
+										</div>
+										<p>Гарантия 2 года</p>
+									</div>
+									<div class="thumb_1">
+										<div class="img_box">
+											<img src="img/icon_03.svg" alt="" />
+										</div>
+										<p>Свидетельство<br /> СРО</p>
+									</div>
+									<div class="thumb_1">
+										<div class="img_box">
+											<img src="img/icon_04.svg" alt="" />
+										</div>
+										<p>Современные материалы и технологии</p>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="thumbnails_1">
-							<div class="thumb_1">
-								<div class="img_box">
-									<img src="img/icon_01.svg" alt="" />
-								</div>
-								<p>11 лет честной<br /> работы</p>
-							</div>
-							<div class="thumb_1">
-								<div class="img_box">
-									<img src="img/icon_02.svg" alt="" />
-								</div>
-								<p>Гарантия 2 года</p>
-							</div>
-							<div class="thumb_1">
-								<div class="img_box">
-									<img src="img/icon_03.svg" alt="" />
-								</div>
-								<p>Свидетельство<br /> СРО</p>
-							</div>
-							<div class="thumb_1">
-								<div class="img_box">
-									<img src="img/icon_04.svg" alt="" />
-								</div>
-								<p>Современные материалы и технологии</p>
-							</div>
+						<div class="col">
+							<img class="worker" src="img/worker.png" alt="" />
 						</div>
-					</div>
+					</div>					
 				</div>
 			</section>
 
@@ -137,26 +217,37 @@
 
 			<!-- Section 3 - Main Page -->
 
-			<section class="sect_3 dark_mask">
+			<section class="sect_3 dark_mask overflow_wrapp">
+				<div class="bg_line_wrapp">
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+				</div>
 				<div class="row">
 					<div class="two_cols_2">
 						<div class="col">
 							<h3>Что нужно знать о типах ремонта?</h3>
-							<div class="video_wrapp">
-								<div class="video_box">
-									<img class="video_img" src="img/video_img.jpg" alt="" />
-									<div class="play_btn">
-										<img src="img/play.svg" alt="" />
+							<div class="video_wrapp_sect">
+								<img class="polygon" src="img/polygon.svg" alt="" />
+								<div class="video_wrapp">
+									<a class="video_box" href="https://youtu.be/HYvgSUL15bU" data-fancybox >
+										<img class="video_img" src="img/video_img.jpg" alt="" />
+										<div class="play_btn">
+											<img src="img/play.svg" alt="" />
+										</div>
+									</a>
+									<div class="video_desc">
+										<p>Этот неожиданный аргумент особенно понравился приказчику, и он издал одобрительный звук. Все в доме идет по-старому, но все в недоуменье и все вопросительно и укоризненно смотрят на меня, предполагая, что все это от меня. А во мне все та же борьба — злобы за то, что она меня мучает, и беспокойства за нее.</p>
 									</div>
-								</div>
-								<div class="video_desc">
-									<p>Этот неожиданный аргумент особенно понравился приказчику, и он издал одобрительный звук. Все в доме идет по-старому, но все в недоуменье и все вопросительно и укоризненно смотрят на меня, предполагая, что все это от меня. А во мне все та же борьба — злобы за то, что она меня мучает, и беспокойства за нее.</p>
 								</div>
 							</div>
 						</div>
 						<div class="col">
 							<div class="price_thumbnails_wrapp">
 								<h3 class="ligth_h3"><b>Узнайте стоимость</b> вашего<br /> ремонта прямо сейчас</h3>
+								<img class="tr_4" src="img/yellow_tr_2.svg" alt="" />
 								<div class="price_thumbnails offset_ziro">
 									<div class="price_thumbnail">
 										<div class="inner_wrapp">
@@ -181,7 +272,7 @@
 											</div>
 										</div>
 										<div class="button_wrapp">
-											<a href="#" class="yellow_pill">Заказать расчет</a>
+											<a href="#" class="yellow_pill" data-popup-link = "popup_1">Заказать расчет</a>
 										</div>
 									</div>
 									<div class="price_thumbnail best">
@@ -207,7 +298,7 @@
 											</div>
 										</div>
 										<div class="button_wrapp">
-											<a href="#" class="yellow_pill">Заказать расчет</a>
+											<a href="#" class="yellow_pill" data-popup-link = "popup_1">Заказать расчет</a>
 										</div>
 									</div>
 									<div class="price_thumbnail">
@@ -233,7 +324,7 @@
 											</div>
 										</div>
 										<div class="button_wrapp">
-											<a href="#" class="yellow_pill">Заказать расчет</a>
+											<a href="#" class="yellow_pill" data-popup-link = "popup_1">Заказать расчет</a>
 										</div>
 									</div>
 								</div>
@@ -248,6 +339,13 @@
 			<!-- Section 4 - Main Page -->
 
 			<section>
+				<div class="bg_line_wrapp">
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+				</div>
 				<div class="row">
 					<div class="gallery_wrapp">
 						<div class="h_wrapp">
@@ -284,6 +382,13 @@
 			<!-- Section 5 - Main Page -->
 
 			<section class="sect_5 dark_mask">
+				<div class="bg_line_wrapp">
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+				</div>
 				<div class="row">
 					<div class="article_2">
 						<div class="article_2_desc">
@@ -292,7 +397,10 @@
 							</div>
 							<p>Рассчитайте стоимость ремонта квартиры или помещения</p>
 							<a href="#" class="yellow_pill">Рассчитать цену</a>
+							<img class="tr_5" src="img/yellow_tr_2.svg" alt="">
+							<img class="tr_6" src="img/yellow_tr_4.svg" alt="">
 						</div>
+						<img class="calc" src="img/calc.png" alt="" />
 					</div>
 				</div>
 			</section>
@@ -301,105 +409,119 @@
 
 			<!-- Section 6 - Main Page -->
 
-			<section>
+			<section class="sect_6 z_2 overflow_wrapp">
+				<div class="bg_line_wrapp">
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+				</div>
 				<div class="row">
 					<div class="title_wrapp_2">
 						<h2><b>Основная цель компании "Проспект" -</b><br /> делать качественный ремонт по доступной цене. Нам удается этого достичь благодаря следующим принципам работы:</h2>
 					</div>
-					<div>
-						<div class="article_3">
-							<div class="col">
-								<div class="article_3_header">
-									<h3><b>5 уровней</b> контроля качества</h3>
-								</div>
-								<div class="article_3_desc">
-									<div class="items_wrapp">
-										<div class="tex_item">
-											<h5>1. Главный инженер из офиса.</h5>
-											<p>Контроль качества и ведение сметно-договорной документации прорабами</p>
-										</div>
-										<div class="tex_item">
-											<h5>2. Начальник отдела технического контроля, как из офиса так и на выезде.</h5>
-											<p>Решение вопросов с клиентами и разрешение затруднений во время работ</p>
-										</div>
-										<div class="tex_item">
-											<h5>3. Специалист технического контроля, выезд на объекты.</h5>
-											<p>Объезд действующих объектов и контроль качества на месте</p>
-										</div>
-										<div class="tex_item">
-											<h5>4. Прораб на объекте.</h5>
-											<p>Постоянный контроль за объектом и коммуницирование с заказчиком</p>
-										</div>
-										<div class="tex_item">
-											<h5>5. Клиент-менеджер из офиса.</h5>
-											<p>Еженедельный обзвон клиентов и опрос о качестве и порядке производства работ на объекте</p>
+				</div>
+				<div class="triangle_bg">
+					<img class="bg_tr_1" src="img/bg_tr.svg" alt="" />
+					<img class="bg_tr_2" src="img/bg_tr.svg" alt="" />
+					<img class="bg_tr_3" src="img/bg_tr.svg" alt="" />
+					<div class="row">
+						<div class="articles_wrapp">
+							<div class="article_3">
+								<div class="col">
+									<div class="article_3_header">
+										<h3><b>5 уровней</b> контроля качества</h3>
+									</div>
+									<div class="article_3_desc">
+										<div class="items_wrapp">
+											<div class="tex_item">
+												<h5>1. Главный инженер из офиса.</h5>
+												<p>Контроль качества и ведение сметно-договорной документации прорабами</p>
+											</div>
+											<div class="tex_item">
+												<h5>2. Начальник отдела технического контроля, как из офиса так и на выезде.</h5>
+												<p>Решение вопросов с клиентами и разрешение затруднений во время работ</p>
+											</div>
+											<div class="tex_item">
+												<h5>3. Специалист технического контроля, выезд на объекты.</h5>
+												<p>Объезд действующих объектов и контроль качества на месте</p>
+											</div>
+											<div class="tex_item">
+												<h5>4. Прораб на объекте.</h5>
+												<p>Постоянный контроль за объектом и коммуницирование с заказчиком</p>
+											</div>
+											<div class="tex_item">
+												<h5>5. Клиент-менеджер из офиса.</h5>
+												<p>Еженедельный обзвон клиентов и опрос о качестве и порядке производства работ на объекте</p>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col">
-								<div class="img_box">
-									<img src="img/photo_05.jpg" alt="" />
+								<div class="col">
+									<div class="img_box">
+										<img src="img/photo_05.jpg" alt="" />
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="article_3">
-							<div class="col">
-								<div class="article_3_header">
-									<h3><b>Строгий</b> подбор рабочих</h3>
+							<div class="article_3">
+								<div class="col">
+									<div class="article_3_header">
+										<h3><b>Строгий</b> подбор рабочих</h3>
+									</div>
+									<div class="article_3_desc">
+										<ul>
+											<li>Все рабочие граждане РФ</li>
+											<li>Проходят 2-х недельные курсы</li>
+											<li>Проверяются на нашем спец полигоне</li>
+											<li>Проходят переаттестацию каждые 3 месяца</li>
+										</ul>
+									</div>
 								</div>
-								<div class="article_3_desc">
-									<ul>
-										<li>Все рабочие граждане РФ</li>
-										<li>Проходят 2-х недельные курсы</li>
-										<li>Проверяются на нашем спец полигоне</li>
-										<li>Проходят переаттестацию каждые 3 месяца</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col">
-								<div class="img_box">
-									<img src="img/photo_06.jpg" alt="" />
-								</div>
-							</div>
-						</div>
-						<div class="article_3">
-							<div class="col">
-								<div class="article_3_header">
-									<h3><b>Доставка</b> материалов</h3>
-								</div>
-								<div class="article_3_desc">
-									<ul>
-										<li>Цены на материал от производителей</li>
-										<li>Проверенное качество материалов на сотнях объектов</li>
-										<li>Доставка материалов в день обращения</li>
-										<li>Выкуп оставшегося лишнего материала</li>
-									</ul>
+								<div class="col">
+									<div class="img_box">
+										<img src="img/photo_06.jpg" alt="" />
+									</div>
 								</div>
 							</div>
-							<div class="col">
-								<div class="img_box">
-									<img src="img/photo_07.jpg" alt="" />
+							<div class="article_3">
+								<div class="col">
+									<div class="article_3_header">
+										<h3><b>Доставка</b> материалов</h3>
+									</div>
+									<div class="article_3_desc">
+										<ul>
+											<li>Цены на материал от производителей</li>
+											<li>Проверенное качество материалов на сотнях объектов</li>
+											<li>Доставка материалов в день обращения</li>
+											<li>Выкуп оставшегося лишнего материала</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col">
+									<div class="img_box">
+										<img src="img/photo_07.jpg" alt="" />
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="article_3">
-							<div class="col">
-								<div class="article_3_header">
-									<h3><b>Соблюдение</b> сроков</h3>
+							<div class="article_3">
+								<div class="col">
+									<div class="article_3_header">
+										<h3><b>Соблюдение</b> сроков</h3>
+									</div>
+									<div class="article_3_desc">
+										<ul>
+											<li>Работаем в удобное для Вас время</li>
+											<li>Сроки прописываются в договоре</li>
+											<li>Штрафы за неисполнение сроков</li>
+											<li>Еженедельная сверка сроков</li>
+										</ul>
+									</div>
 								</div>
-								<div class="article_3_desc">
-									<ul>
-										<li>Работаем в удобное для Вас время</li>
-										<li>Сроки прописываются в договоре</li>
-										<li>Штрафы за неисполнение сроков</li>
-										<li>Еженедельная сверка сроков</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col">
-								<div class="img_box">
-									<img src="img/photo_08.jpg" alt="" />
+								<div class="col">
+									<div class="img_box">
+										<img src="img/photo_08.jpg" alt="" />
+									</div>
 								</div>
 							</div>
 						</div>
@@ -412,6 +534,13 @@
 			<!-- Section 7 - Main Page -->
 
 			<section class="sect_7 dark_mask">
+				<div class="bg_line_wrapp">
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+					<div class="bg_line"></div>
+				</div>
 				<div class="row">
 					<div class="services_wrapp">
 						<div class="col">
@@ -419,66 +548,86 @@
 						</div>
 						<div class="col">
 							<div class="service_items_wrapp offset_ziro">
-								<div class="service_item">
+								<a href="#" class="service_item">
 									<div class="num_box">
 										<p>01.</p>
 									</div>
-									<p>Продажа и установка входных дверей</p>
-								</div>
-								<div class="service_item">
+									<div class="descript">
+										<p>Продажа и установка входных дверей</p>
+									</div>
+								</a>
+								<a href="#" class="service_item">
 									<div class="num_box">
 										<p>02.</p>
 									</div>
-									<p>Продажа и установка межкомнатных дверей</p>
-								</div>
-								<div class="service_item">
+									<div class="descript">
+										<p>Продажа и установка межкомнатных дверей</p>
+									</div>
+								</a>
+								<a href="#" class="service_item">
 									<div class="num_box">
 										<p>03.</p>
 									</div>
-									<p>Продажа и установка кондиционеров</p>
-								</div>
-								<div class="service_item">
+									<div class="descript">
+										<p>Продажа и установка кондиционеров</p>
+									</div>
+								</a>
+								<a href="#" class="service_item">
 									<div class="num_box">
 										<p>04.</p>
 									</div>
-									<p>Изготовление и установка окон</p>
-								</div>
-								<div class="service_item">
+									<div class="descript">
+										<p>Изготовление и установка окон</p>
+									</div>
+								</a>
+								<a href="#" class="service_item">
 									<div class="num_box">
 										<p>05.</p>
 									</div>
-									<p>Мелкий бытовой ремонт. (мастер на час)</p>
-								</div>
-								<div class="service_item">
+									<div class="descript">
+										<p>Мелкий бытовой ремонт. (мастер на час)</p>
+									</div>
+								</a>
+								<a href="#" class="service_item">
 									<div class="num_box">
 										<p>06.</p>
 									</div>
-									<p>Утилизация строительного мусора</p>
-								</div>
-								<div class="service_item">
+									<div class="descript">
+										<p>Утилизация строительного мусора</p>
+									</div>
+								</a>
+								<a href="#" class="service_item">
 									<div class="num_box">
 										<p>07.</p>
 									</div>
-									<p>Доставка и разгрузка черновых материалов</p>
-								</div>
-								<div class="service_item">
+									<div class="descript">
+										<p>Доставка и разгрузка черновых материалов</p>
+									</div>
+								</a>
+								<a href="#" class="service_item bg_item">
 									<div class="num_box">
 										<p>08.</p>
 									</div>
-									<p>Услуги клининга</p>
-								</div>
-								<div class="service_item">
+									<div class="descript">
+										<p>Услуги клининга</p>
+									</div>
+								</a>
+								<a href="#" class="service_item">
 									<div class="num_box">
 										<p>09.</p>
 									</div>
-									<p>Кухни, шкафы купе. изготовление и установка</p>
-								</div>
-								<div class="service_item">
+									<div class="descript">
+										<p>Кухни, шкафы купе. изготовление и установка</p>
+									</div>
+								</a>
+								<a href="#" class="service_item">
 									<div class="num_box">
 										<p>10.</p>
 									</div>
-									<p>Жалюзи и шторы на заказ.</p>
-								</div>
+									<div class="descript">
+										<p>Жалюзи и шторы на заказ.</p>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -489,98 +638,111 @@
 
 			<!-- Section 8 - Main Page -->
 
-			<!-- <section>
+			<section class="z_2">
 				<div class="row">
-					<div class="h_wrapp">
+					<div class="h_wrapp h_wrapp_2">
 						<h3><b>Наши</b> работы</h3>
 					</div>
 					<div class="gallery_2">
 						<div class="photo_box_2" style="background-image: url(img/photo_09.jpg);">
 							<div class="mask">
-								<h3>Дизайн интерьера 3-комнатной квартиры по адресу ул. Минская, д. 2, ЖК Долина Сетунь, площадью 133 кв. м.</h3>
-								<a href="#" class="yellow_link">подробнее</a>
+								<div class="title_wrapp_3">
+									<h3>Дизайн интерьера 3-комнатной квартиры по адресу ул. Минская, д. 2, ЖК Долина Сетунь, площадью 133 кв. м.</h3>
+									<a href="#" class="yellow_link">подробнее</a>
+								</div>
 							</div>
 						</div>
 						<div class="photo_box_2" style="background-image: url(img/photo_10.jpg);">
 							<div class="mask">
-								<h3>Дизайн интерьера 3-комнатной квартиры по адресу ул. Минская, д. 2, ЖК Долина Сетунь, площадью 133 кв. м.</h3>
-								<a href="#" class="yellow_link">подробнее</a>
+								<div class="title_wrapp_3">
+									<h3>Дизайн интерьера 3-комнатной квартиры по адресу ул. Минская, д. 2, ЖК Долина Сетунь, площадью 133 кв. м.</h3>
+									<a href="#" class="yellow_link">подробнее</a>
+								</div>
 							</div>
 						</div>
 						<div class="photo_box_2" style="background-image: url(img/photo_10.jpg);">
 							<div class="mask">
-								<h3>Дизайн интерьера 3-комнатной квартиры по адресу ул. Минская, д. 2, ЖК Долина Сетунь, площадью 133 кв. м.</h3>
-								<a href="#" class="yellow_link">подробнее</a>
+								<div class="title_wrapp_3">
+									<h3>Дизайн интерьера 3-комнатной квартиры по адресу ул. Минская, д. 2, ЖК Долина Сетунь, площадью 133 кв. м.</h3>
+									<a href="#" class="yellow_link">подробнее</a>
+								</div>
 							</div>
 						</div>
 						<div class="photo_box_2" style="background-image: url(img/photo_10.jpg);">
 							<div class="mask">
-								<h3>Дизайн интерьера 3-комнатной квартиры по адресу ул. Минская, д. 2, ЖК Долина Сетунь, площадью 133 кв. м.</h3>
-								<a href="#" class="yellow_link">подробнее</a>
+								<div class="title_wrapp_3">
+									<h3>Дизайн интерьера 3-комнатной квартиры по адресу ул. Минская, д. 2, ЖК Долина Сетунь, площадью 133 кв. м.</h3>
+									<a href="#" class="yellow_link">подробнее</a>
+								</div>
 							</div>
 						</div>
 						<div class="photo_box_2" style="background-image: url(img/photo_10.jpg);">
 							<div class="mask">
-								<h3>Дизайн интерьера 3-комнатной квартиры по адресу ул. Минская, д. 2, ЖК Долина Сетунь, площадью 133 кв. м.</h3>
-								<a href="#" class="yellow_link">подробнее</a>
+								<div class="title_wrapp_3">
+									<h3>Дизайн интерьера 3-комнатной квартиры по адресу ул. Минская, д. 2, ЖК Долина Сетунь, площадью 133 кв. м.</h3>
+									<a href="#" class="yellow_link">подробнее</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section> -->
+			</section>
 
 			<!-- /Section 8 - Main Page -->
 
 			<!-- Section 9 - Main Page -->
 
-			<!-- <section>
+			<section class="sect_9">
 				<div class="row">
 					<div class="article_4">
-						<h3><b>Отзывы</b> о нашей работе</h3>
+						<h3><b>Отзывы</b> о нашей<br /> работе</h3>
 						<p>Прочитайте отзывы о нас на сайте <b>«Отзывы. Москва»</b> полностью независимом сайте, на котором каждый из вас может поделиться с другими опытом, полученным после обращения в любую из московских компаний.</p>
 						<p><a href="#" class="black_link">Смотреть отзывы</a></p>
 					</div>
 				</div>
-			</section> -->
+			</section>
 
 			<!-- /Section 9 - Main Page -->
 
 			<!-- Section 10 - Main Page -->
 
-		<!-- 	<section>
+			<section class="sect_10">
 				<div class="row">
-					<div class="prev_thumb_wrapp">
-						<h3>Новости</h3>
-						<div class="prev_thumb">
-							<div class="col">
-								<div class="img_box">
-									<img src="img/" alt="" />
+					<div class="prev_thumbs_sect offset_ziro">
+						<div class="prev_thumb_wrapp">
+							<h3>Новости</h3>
+							<a href="#" class="prev_thumb">
+								<div class="col">
+									<div class="img_box">
+										<img src="img/photo_11.jpg" alt="" />
+									</div>
 								</div>
-							</div>
-							<div class="col">
-								<p class="date">01.06</p>
-								<p>Этот неожиданный аргумент особенно понравился приказчику, и он издал одобрительный звук. Все в доме идет по-старому, но все в недоуменье</p>
-							</div>
-						</div>
-						<a href="#" class="transparent_pill">Все новости</a>
-					</div>
-					<div class="prev_thumb_wrapp">
-						<h3>Видео</h3>
-						<div class="prev_thumb">
-							<div class="col">
-								<div class="video_box">
-									<div class="play_btn"></div>
+								<div class="col">
+									<p class="date">01.06</p>
+									<p>Этот неожиданный аргумент особенно понравился приказчику, и он издал одобрительный звук. Все в доме идет по-старому, но все в недоуменье</p>
 								</div>
-							</div>
-							<div class="col">
-								<p class="date">01.06</p>
-								<p>Этот неожиданный аргумент особенно понравился приказчику, и он издал одобрительный звук. Все в доме идет по-старому, но все в недоуменье</p>
-							</div>
+							</a>
+							<a href="#" class="transparent_pill">Все новости</a>
 						</div>
-						<a href="#" class="transparent_pill">Все видео</a>
+						<div class="prev_thumb_wrapp">
+							<h3>Видео</h3>
+							<a href="#" class="prev_thumb">
+								<div class="col">
+									<div class="video_box_2">
+										<img src="img/photo_12.jpg" alt="" />
+										<div class="play_btn_2"></div>
+									</div>
+								</div>
+								<div class="col">
+									<p class="date">01.06</p>
+									<p>Этот неожиданный аргумент особенно понравился приказчику, и он издал одобрительный звук. Все в доме идет по-старому, но все в недоуменье</p>
+								</div>
+							</a>
+							<a href="#" class="transparent_pill">Все видео</a>
+						</div>
 					</div>
 				</div>
-			</section> -->
+			</section>
 
 			<!-- /Section 10 - Main Page -->
 
@@ -610,6 +772,27 @@
 	<!-- /Footer -->
 
 	</div>
+
+	<!-- Popups -->
+
+	<div class="popup_sect" data-popup="popup_1">
+		<div class="popup_wrapp">
+			<button type="button" class="close_btn"><i class="close"></i></button>
+			<div class="popup_form_wrapp">
+				<div class="input_wrapp">
+					<input type="text" placeholder="Имя" />
+				</div>
+				<div class="input_wrapp">
+					<input type="tel" placeholder="Телефон" />
+				</div>
+				<div class="input_wrapp">
+					<input type="tel" class="yellow_pill" value="Заказать звонок" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- /Popups -->
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"> -->
