@@ -1061,7 +1061,6 @@ textarea:focus {
     width: 100%;
     max-width: 608px;
     height: 100%;
-    /*position: relative;*/
     position: absolute;
     top: 0;
     right: 0;
@@ -1152,6 +1151,60 @@ textarea:focus {
     position: absolute;
     bottom: -5px;
     left: 9%;
+}
+
+.promo_item {
+    position: absolute;
+    top: 193px;
+    left: 50%;
+}
+
+.tr_lines_1 {
+    position: absolute;
+    top: -186px;
+    left: -1036px;
+}
+
+.promo_item .descript {
+    max-width: 294px;
+}
+
+.promo_item p {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.promo_item_2 {
+    position: absolute;
+    top: 320px;
+    left: 59%;
+}
+
+.tr_lines_2 {
+    position: absolute;
+    top: -289px;
+    left: -1119px;
+    -webkit-transform: rotate(14deg);
+    -moz-transform: rotate(14deg);
+    transform: rotate(14deg);
+}
+
+.promo_item_3 {
+    position: absolute;
+    top: 479px;
+    left: 51%;
+}
+
+.tr_lines_3 {
+    position: absolute;
+    top: -384px;
+    left: -1168px;
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    transform: rotate(25deg);
 }
 
 /*-- /Section 1 - Main Page --*/
@@ -1892,12 +1945,12 @@ textarea:focus {
 }
 
 .services_wrapp .col:nth-child(1) {
-    width: 29%;
+    width: 28%;
     padding-top: 7px;
 }
 
 .services_wrapp .col:nth-child(2) {
-    width: 71%;
+    width: 72%;
 }
 
 .services_wrapp h3 {
