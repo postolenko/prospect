@@ -52,21 +52,21 @@ $(document).ready(function() {
         $(this).addClass("active");
     });
 
-    // $(this).keydown(function(eventObject){
-    //     if (eventObject.which == 27 &&
-    //         $("#dropdown_menu").is(":visible") ) {
-    //             $("#dropdown_menu").slideUp(500);
-    //             $(".respmenubtn").removeClass("active");
-    //             $("#menu_show").fadeOut(500);
-    //     }
-    // });
+    $(this).keydown(function(eventObject){
+        if (eventObject.which == 27 &&
+            $("#dropdown_menu").is(":visible") ) {
+                $("#dropdown_menu").slideUp(500);
+                $(".respmenubtn").removeClass("active");
+                $("#menu_show").fadeOut(500);
+        }
+    });
 
-    // $("#menu_show").on('click', function(e) {
-    // 	e.preventDefault();
-    // 	$(".respmenubtn").removeClass("active");
-    // 	$("#dropdown_menu").slideUp(500);
-    // 	$("#menu_show").fadeOut(500);
-    // })
+    $("#menu_show").on('click', function(e) {
+    	e.preventDefault();
+    	$(".respmenubtn").removeClass("active");
+    	$("#dropdown_menu").slideUp(500);
+    	$("#menu_show").fadeOut(500);
+    });
 
 
 

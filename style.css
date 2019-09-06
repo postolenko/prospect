@@ -910,7 +910,7 @@ textarea:focus {
 /* ----- / Responsive Menu Button ------ */
 
 .main_nav_dropdown {
-    /*display: none;*/
+    display: none;
     width: 100%;
     height: 350px;
     position: absolute;
