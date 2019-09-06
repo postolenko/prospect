@@ -25,6 +25,13 @@ $(document).scroll(function() {
 
 $(document).ready(function() {
 
+    $(".main_nav_dropdown_list a").each(function(){
+        // $(this).children("ul").addClass("sub_menu");
+        if($(this).next("ul").length > 0) {
+            $(this).append("<div type='button' class='arrow_btn'></div>");
+        }
+    });
+
 	$(".respmenubtn").click(function() {
         if( $("#dropdown_menu").is(":hidden") ) {
             $("#dropdown_menu").slideDown(500);
@@ -37,21 +44,31 @@ $(document).ready(function() {
         }
     });
 
-    $(this).keydown(function(eventObject){
-        if (eventObject.which == 27 &&
-            $("#dropdown_menu").is(":visible") ) {
-                $("#dropdown_menu").slideUp(500);
-                $(".respmenubtn").removeClass("active");
-                $("#menu_show").fadeOut(500);
+    $(".main_nav_dropdown_list li a").mouseover(function() {
+        if(!$(this).closest("ul").prev("a").hasClass("active")) {
+            $(".main_nav_dropdown_list li a").removeClass("active");
         }
+        $(this).closest("ul").find("a").removeClass("active");
+        $(this).addClass("active");
     });
 
-    $("#menu_show").on('click', function(e) {
-    	e.preventDefault();
-    	$(".respmenubtn").removeClass("active");
-    	$("#dropdown_menu").slideUp(500);
-    	$("#menu_show").fadeOut(500);
-    })
+    // $(this).keydown(function(eventObject){
+    //     if (eventObject.which == 27 &&
+    //         $("#dropdown_menu").is(":visible") ) {
+    //             $("#dropdown_menu").slideUp(500);
+    //             $(".respmenubtn").removeClass("active");
+    //             $("#menu_show").fadeOut(500);
+    //     }
+    // });
+
+    // $("#menu_show").on('click', function(e) {
+    // 	e.preventDefault();
+    // 	$(".respmenubtn").removeClass("active");
+    // 	$("#dropdown_menu").slideUp(500);
+    // 	$("#menu_show").fadeOut(500);
+    // })
+
+
 
     // ----------------------------
 
