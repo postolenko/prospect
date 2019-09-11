@@ -7,15 +7,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-	<link rel="stylesheet" type="text/css" href="style.css">	
+	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Denis Postolenko</title>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
 
 	<div class="wrapper">
 	<div class="menu_show_mask" id="menu_show"></div>
+
 	<!-- Header -->
 		
 	<header>
@@ -28,23 +29,35 @@
 						</a>
 					</div>
 					<div class="col">
-						 <p>г. Москва, 2-й проезд Перова Поля 9, корпус 2</p>
-						 <p>Работаем с 10:00 до 21:00, без выходных</p>
+						<div class="novisile_767">
+							<p>г. Москва, 2-й проезд Перова Поля 9, корпус 2</p>
+							<p>Работаем с 10:00 до 21:00, без выходных</p>
+						</div>
+						 <div class="respmenubtn resp_btn_1">
+							<div class="respmenubtn_col">
+								<p>Меню</p>
+							</div>
+							<div class="respmenubtn_col">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
 					</div>
 					<div class="col">
 						<div class="tel_wrapp">
-							<div class="col">
+							<div class="tel_wrapp_col">
 								<p>Бесплатно со стационарных и мобильных РФ</p>
 							</div>
-							<div class="col">
+							<div class="tel_wrapp_col">
 								<p><a href="tel:88005053971" class="tel_link">8 (800) 505-39-71</a></p>
 							</div>
 						</div>
 						<div class="tel_wrapp">
-							<div class="col">
+							<div class="tel_wrapp_col">
 								<p>Вызов замерщика и оформление заказов</p>
 							</div>
-							<div class="col">
+							<div class="tel_wrapp_col">
 								<p><a href="tel:84993224540" class="tel_link">8 (499) 322-45-40</a></p>
 							</div>
 						</div>
@@ -53,12 +66,12 @@
 			</div>
 			<div class="row">
 				<div class="main_nav_sect">
-					<div class="col">
+					<div class="col novisile_767">
 						<div class="respmenubtn">
-							<div class="col">
+							<div class="respmenubtn_col">
 								<p>Меню</p>
 							</div>
-							<div class="col">
+							<div class="respmenubtn_col">
 								<span></span>
 								<span></span>
 								<span></span>
@@ -66,6 +79,7 @@
 						</div>
 					</div>
 					<div class="col">
+						<div class="top_menu append-elem" data-append-desktop-elem = "1" data-min-screen = "767">
 						<div class="main_nav_wrapp" id="resp_nav">
 							<ul class="main_nav">
 								<li><a href="#">Калькулятор</a></li>
@@ -74,8 +88,9 @@
 							</ul>
 						</div>
 					</div>
-
+					</div>
 					<div class="main_nav_dropdown" id="dropdown_menu">
+						<div class="append-elem top_menu_resp" data-append-elem = "1"></div>
 						<ul class="main_nav_dropdown_list">
 							<li>
 								<a href="https://remprospekt.ru/remont-kvartir/">Ремонт квартир</a>
@@ -149,6 +164,11 @@
 							</li>
 							<li>
 								<a href="#">Link 3</a>
+								<ul>
+									<li><a href="#">Link  3_1</a></li>
+									<li><a href="#">Link  3_2</a></li>
+									<li><a href="#">Link  3_3</a></li>
+								</ul>
 							</li>
 							<li>
 								<a href="#">Link 4</a>
@@ -208,7 +228,6 @@
 							</li>
 						</ul>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -234,6 +253,7 @@
 						<div class="promo_img">
 							<img src="img/promo_img.jpg" alt="" />
 						</div>
+						<img class="scroll_down" src="img/scroll_down_white.svg" alt="" />
 					</div>
 				</div>
 				<div class="row content_row">
@@ -282,7 +302,7 @@
 						<div class="col">
 							<div class="article_1">
 								<div class="title_wrapp_1">
-									<p><b>Мы всегда работаем на высшем уровне</b></br>
+									<p><b>Мы всегда работаем на высшем уровне</b><br />
 									и гарантируем качество и долговечность ремонта</p>
 								</div>
 								<div class="thumbnails_1">
@@ -537,6 +557,11 @@
 						<div class="articles_wrapp">
 							<div class="article_3">
 								<div class="col">
+									<div class="img_box">
+										<img src="img/photo_05.jpg" alt="" />
+									</div>
+								</div>
+								<div class="col">
 									<div class="article_3_header">
 										<h3><b>5 уровней</b> контроля качества</h3>
 									</div>
@@ -565,13 +590,13 @@
 										</div>
 									</div>
 								</div>
-								<div class="col">
-									<div class="img_box">
-										<img src="img/photo_05.jpg" alt="" />
-									</div>
-								</div>
 							</div>
 							<div class="article_3">
+								<div class="col">
+									<div class="img_box">
+										<img src="img/photo_06.jpg" alt="" />
+									</div>
+								</div>
 								<div class="col">
 									<div class="article_3_header">
 										<h3><b>Строгий</b> подбор рабочих</h3>
@@ -584,14 +609,14 @@
 											<li>Проходят переаттестацию каждые 3 месяца</li>
 										</ul>
 									</div>
-								</div>
-								<div class="col">
-									<div class="img_box">
-										<img src="img/photo_06.jpg" alt="" />
-									</div>
-								</div>
+								</div>								
 							</div>
 							<div class="article_3">
+								<div class="col">
+									<div class="img_box">
+										<img src="img/photo_07.jpg" alt="" />
+									</div>
+								</div>
 								<div class="col">
 									<div class="article_3_header">
 										<h3><b>Доставка</b> материалов</h3>
@@ -604,14 +629,14 @@
 											<li>Выкуп оставшегося лишнего материала</li>
 										</ul>
 									</div>
-								</div>
-								<div class="col">
-									<div class="img_box">
-										<img src="img/photo_07.jpg" alt="" />
-									</div>
-								</div>
+								</div>								
 							</div>
 							<div class="article_3">
+								<div class="col">
+									<div class="img_box">
+										<img src="img/photo_08.jpg" alt="" />
+									</div>
+								</div>
 								<div class="col">
 									<div class="article_3_header">
 										<h3><b>Соблюдение</b> сроков</h3>
@@ -624,12 +649,7 @@
 											<li>Еженедельная сверка сроков</li>
 										</ul>
 									</div>
-								</div>
-								<div class="col">
-									<div class="img_box">
-										<img src="img/photo_08.jpg" alt="" />
-									</div>
-								</div>
+								</div>								
 							</div>
 						</div>
 					</div>
@@ -853,26 +873,12 @@
 
 			<!-- /Section 10 - Main Page -->
 
-
 		</div>
 	<!-- /Content -->
 
 	<!-- Footer -->
 
 		<footer class="footer_section">
-
-			<!-- <div class="footer row clearfix">
-				<div class="left">
-					<a href="#" class="logo"></a>
-				</div>
-				<div class="right">
-					<ul class="main-nav">							
-						<li><a href="/">Портфолио</a></li>
-						<li><a href="/testimonials.php">Отзывы</a></li>
-						<li><a href="/contacts.php">Контакты</a></li>
-					</ul>
-				</div>
-			</div> -->
 
 		</footer>
 
@@ -902,19 +908,10 @@
 	<!-- /Popups -->
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">
-	<!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css"> -->
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
-	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<script src="vendors/js/jquery.js"></script>
 	<script src="slick/slick.js"></script>
-	<!-- <script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script> -->
-	<!-- <script src="vendors/js/smoothscroll.js"></script> -->
-	<!-- <script src="vendors/js/sketch.min.js"></script> -->
-	<!-- <script src="vendors/js/izotope.min.js"></script> -->
 	<script src="vendors/js/jquery.fancybox.js"></script>
 	<script src="js/scripts.js"></script>
-	<!-- <script src="js/additional_scripts.js"></script> -->
-
 </body>
 </html>
