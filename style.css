@@ -997,18 +997,18 @@ textarea:focus {
 .main_nav_dropdown_list li a .arrow_btn {
     display: block;
     content: "";
-    width: 8px;
-    height: 8px;
+    width: 20px;
+    height: 20px;
     border: none;
     background-color: transparent;
     background-image: url(img/arrow_nav.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 50%;
     position: absolute;
     top: 50%;
     right: 15px;
-    margin-top: -4px;
+    margin-top: -10px;
     -webkit-transition-property: transform;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -1032,6 +1032,19 @@ textarea:focus {
 
 .main_nav_dropdown_list li a .arrow_btn.active {
     transform: rotate(-90deg);
+}
+
+.main_nav_dropdown_list .resp_item {
+    display: none;
+}
+
+.menu_title {
+    padding: 8px 15px;
+    border-bottom: 1px solid #efefef;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 22px;
+    color: #000000;
 }
 
 .menu_show_mask {
