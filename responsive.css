@@ -474,8 +474,6 @@ h2 {
 }
 
 .main_nav_dropdown_list li ul {
-    /*display: none;*/
-    /*display: block;*/
     width: 100%;
     top: 0;
     left: 0;
@@ -838,6 +836,14 @@ h2 {
 }
 
 @media only screen and (max-width: 440px) {
+
+/*-- Header --*/
+
+.main_nav li {
+    padding: 0 5px;
+}
+
+/*-- /Header --*/
 
 /*-- Section 8 - Main Page --*/
 
