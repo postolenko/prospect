@@ -126,6 +126,14 @@ $(document).ready(function() {
             $("#dropdown_menu").slideDown(500);
             $(this).addClass("active");
             $("#menu_show").fadeIn(500);
+            $(".main_nav_dropdown_list a").removeClass("active");
+            $(".main_nav_dropdown_list li:eq(0) a:eq(0)").addClass("active");
+            $(".main_nav_dropdown_list li:eq(0) ul > li").each(function() {
+                if(!$(this).hasClass("resp_item")) {
+                    $(this).find("a:eq(0)").addClass("active");
+                    return false;
+                }
+            });
         } else {
             $("#dropdown_menu").slideUp(500);
             $(this).removeClass("active");
@@ -148,8 +156,6 @@ $(document).ready(function() {
     	$("#dropdown_menu").slideUp(500);
     	$("#menu_show").fadeOut(500);
     });
-
-
 
     // ----------------------------
 
