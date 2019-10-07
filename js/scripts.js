@@ -48,6 +48,10 @@ $(document).ready(function() {
     getAdaptivePositionElements();
     resetParams();
 
+
+    // Выпадающее меню
+    // ------------------------
+
     $(".main_nav_dropdown_list a").each(function(){
         if($(this).next("ul").length > 0) {
             $(this).append("<div type='button' class='arrow_btn'></div>");
@@ -71,7 +75,6 @@ $(document).ready(function() {
     $(".back_menu").each(function() {
         parentBlock = $(this).closest("li");
         menuTitle = $(this).closest("ul").prev("a").text();
-        // console.log(menuTitle);
         parentBlock.append("<h4 class='menu_title'>"+menuTitle+":</h4>");
     });
 
