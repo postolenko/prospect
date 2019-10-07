@@ -87,11 +87,18 @@ $(document).ready(function() {
 
     $(".main_nav_dropdown_list li a").mouseover(function() {
         if(bodyWidth > 767) {
+            parentBlock = $(this).closest("li");
             if(!$(this).closest("ul").prev("a").hasClass("active")) {
                 $(".main_nav_dropdown_list li a").removeClass("active");
             }
             $(this).closest("ul").find("a").removeClass("active");
             $(this).addClass("active");
+            parentBlock.find("ul li").each(function() {
+                if(!$(this).hasClass("resp_item")) {
+                    $(this).find("a:eq(0)").addClass("active");
+                    return false;
+                }
+            });
         }
     });
 
